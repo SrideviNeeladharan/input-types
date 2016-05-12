@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms in a table</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+  </head>
+  
+  <body>
+    <h1>Input Types</h1>
+    
+      <table>
+        <thead>
+          <th>Control Type</th>
+          <th>Control</th>
+          <th>value entered</th>         
+        </thead>
+        <tbody>
+          
+           <!-- type 1-->
+          <tr>
+            <td>Input Type = "Checkbox"</td>
+            <td class="inputValue">
+                <form>
+                  <input type="checkbox" name="vehicle" value="bike" id="#checkBox" checked="checked">check me<br>
+                </form>
+            </td>
+            <td></td>
+          </tr>
+          
+          <!-- type 2-->
+            <tr>
+            <td>Input Type = "radio"</td>
+            <td>
+            <form>
+              <input type="radio" name="gender" value="bike">male<br>
+              <input type="radio" name="gender" value="bike">female
+            </form>
+            </td>
+            <td id="radioValue"></td>
+          </tr>
+          
+          <!-- type 3-->
+            <tr>
+            <td>Input Type = "text"</td>
+            <td>
+                <form>
+                  <input type="text"  id="tWords" name="vehicle" value="">
+                </form>
+            </td>
+            <td id="textBox"></td>
+          </tr>
+          <!-- type 4 -->
+            <tr>
+            <td>Input Type = "textarea"</td>
+            <td>
+                <form>
+                  <textarea name="message" rows="3" cols="30" id="tMessage"></textarea>
+                </form>
+            </td>
+            <td id="textAreaValue"></td>
+          </tr>
+          
+          <!-- type 5-->
+            <tr>
+            <td>Input Type = "select"</td>
+            <td>
+                <form id="formSelect">
+                    <select id="mySelect">
+                      <option value=" "></option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                    </select>
+                </form>
+            </td>
+            <td id="selectValue"></td>
+          </tr>
+          
+          <!-- type 6-->
+            <tr>
+            <td>Input Type = "email"</td>
+            <td>
+            <form>
+              <input type="email" pattern="/\S+@\S+\.\S+/" placeholder="me@example.com" required id="mailId">
+            </form>
+            </td>
+            <td id="mailValue"></td>
+            </tr>
+          
+          <!-- type 7-->
+            <tr>
+            <td>Input Type = "date"</td>
+            <td>
+            <form>
+              <input type="date" id="dateId" name="date">
+            </form>
+            </td>
+            <td id="dateValue"></td>
+          </tr>
+          
+          <!-- type 8-->
+            <tr>
+            <td>Input Type = "number"</td>
+            <td>
+            <form>
+              <input type="number" id="typeNum" pattern="" step="any">
+             
+            </form>
+            </td>
+            <td id="numValue"></td>
+          </tr>
+          
+          <!-- type 9-->
+            <tr>
+            <td>Input Type = "password"</td>
+            <td>
+            <form>
+               <input type="password" 
+                    id="passwordID"  pattern="" placeholder="Please enter a valid password">
+
+            </form>
+            </td>
+            <td id="passwordValue"></td>
+          </tr>
+          <!-- type 10-->
+            <tr>
+            <td>Input Type = "range"</td>
+            <td>
+            <form>
+              <input type="range" id="rangeId" pattern="" >
+            </form>
+            </td>
+            <td id="rangeValue"></td>
+          </tr>
+          <!--type 11 -->
+           <tr>
+            <td>Input Type = "Color"</td>
+            <td>
+            <form>
+              <input type="color" id="colorId" pattern="" >
+            </form>
+            </td>
+            <td id="colorValue"></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+   <script src="script.js"></script>
+  </body>
+</html>

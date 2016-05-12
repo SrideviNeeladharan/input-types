@@ -1,0 +1,43 @@
+*
+{
+  box-sizing: border-box;
+}
+html
+{
+  background-color: dimgray;
+}
+body
+{
+  width:80%;
+  margin: auto ;
+}
+h1
+{
+  width:40%;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 10em;
+  color:white;
+  background-color: lightsalmon;
+  border:15px double lightseagreen;
+  padding: 5px;
+  
+}
+table
+{
+  margin-top: 10%;
+  width: 100%;
+  
+  border:20px double white;
+  background-color: lightsalmon;
+}
+th
+{
+  padding: 4%;
+  background-color: lightseagreen;
+
+}
+td{
+ padding: 1%; 
+  padding-left: 3%;
+} 
