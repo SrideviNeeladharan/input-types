@@ -19,7 +19,7 @@ h1
   margin-left: 10em;
   color:white;
   background-color: lightsalmon;
-  border:15px double lightseagreen;
+  border:15px double white;
   padding: 5px;
   
 }
@@ -35,6 +35,8 @@ th
 {
   padding: 4%;
   background-color: lightseagreen;
+  font-size:large;
+  font-family: sans-serif;
 
 }
 td{

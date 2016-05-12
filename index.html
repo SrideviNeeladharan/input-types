@@ -14,7 +14,7 @@
         <thead>
           <th>Control Type</th>
           <th>Control</th>
-          <th>value entered</th>         
+          <th>Value Entered</th>         
         </thead>
         <tbody>
           
@@ -23,19 +23,19 @@
             <td>Input Type = "Checkbox"</td>
             <td class="inputValue">
                 <form>
-                  <input type="checkbox" name="vehicle" value="bike" id="#checkBox" checked="checked">check me<br>
+                  <input type="checkbox" name="vehicle" value="bike" id="checkBox" checked="checked">check me<br>
                 </form>
             </td>
-            <td></td>
+            <td id ="checkValue"></td>
           </tr>
           
           <!-- type 2-->
             <tr>
             <td>Input Type = "radio"</td>
             <td>
-            <form>
-              <input type="radio" name="gender" value="bike">male<br>
-              <input type="radio" name="gender" value="bike">female
+            <form id="myForm">
+              <input type="radio" name="gender" value="Male">male<br>
+              <input type="radio" name="gender" value="Female">female
             </form>
             </td>
             <td id="radioValue"></td>
@@ -51,6 +51,7 @@
             </td>
             <td id="textBox"></td>
           </tr>
+          
           <!-- type 4 -->
             <tr>
             <td>Input Type = "textarea"</td>
@@ -83,9 +84,9 @@
             <tr>
             <td>Input Type = "email"</td>
             <td>
-            <form>
-              <input type="email" pattern="/\S+@\S+\.\S+/" placeholder="me@example.com" required id="mailId">
-            </form>
+                <form>
+                  <input type="email" pattern="/\S+@\S+\.\S+/" placeholder="me@example.com" required id="mailId">
+                </form>
             </td>
             <td id="mailValue"></td>
             </tr>
@@ -94,9 +95,9 @@
             <tr>
             <td>Input Type = "date"</td>
             <td>
-            <form>
-              <input type="date" id="dateId" name="date">
-            </form>
+                <form>
+                  <input type="date" id="dateId" name="date">
+                </form>
             </td>
             <td id="dateValue"></td>
           </tr>
@@ -105,10 +106,9 @@
             <tr>
             <td>Input Type = "number"</td>
             <td>
-            <form>
-              <input type="number" id="typeNum" pattern="" step="any">
-             
-            </form>
+                <form>
+                  <input type="number" id="typeNum" step="any">
+                </form>
             </td>
             <td id="numValue"></td>
           </tr>
@@ -117,31 +117,31 @@
             <tr>
             <td>Input Type = "password"</td>
             <td>
-            <form>
-               <input type="password" 
-                    id="passwordID"  pattern="" placeholder="Please enter a valid password">
-
-            </form>
+                <form>
+                   <input type="password" id="passwordID"  placeholder="Please enter a valid password">
+                </form>
             </td>
             <td id="passwordValue"></td>
           </tr>
+          
           <!-- type 10-->
             <tr>
             <td>Input Type = "range"</td>
             <td>
-            <form>
-              <input type="range" id="rangeId" pattern="" >
-            </form>
+                <form>
+                  <input type="range" id="rangeId" >
+                </form>
             </td>
             <td id="rangeValue"></td>
           </tr>
+          
           <!--type 11 -->
            <tr>
             <td>Input Type = "Color"</td>
             <td>
-            <form>
-              <input type="color" id="colorId" pattern="" >
-            </form>
+                <form>
+                  <input type="color" id="colorId" >
+                </form>
             </td>
             <td id="colorValue"></td>
           </tr>

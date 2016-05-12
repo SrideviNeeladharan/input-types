@@ -1,21 +1,32 @@
 $("document").ready(function(){
+ 
   
   
+//CHECKBOX **********************************************************
   
-//CHECKBOX ***************************
   
-      $("#checkBox").change(function(){
+      $("#checkValue").html($("#checkBox").prop("checked")); 
+  
+      $("#checkBox").change(function(){          
 
-        var box = $("#checkBox").prop("checked");
-        console.log(box);
+        if ($("#checkBox").prop("checked")) 
+        {       
+           $("#checkValue").html("true");  
+        }      
+        else        
+        {
+           $("#checkValue").html("false"); 
+        }      
   
-      }).change();
+      });
   
-// RADIO button ***********************************
+  
+  
+// RADIO Button *****************************************************
   
 
-        $('#myForm input').on('change', function() {
-        var radio = $('input:radio[name="gender"]:checked', '#myForm').val();
+        $("#myForm").on('change', function() {        
+          var radio = $('input:radio[name="gender"]:checked', '#myForm').val();
           $("#radioValue").html(radio);
         });
 
@@ -39,7 +50,7 @@ $("document").ready(function(){
       });
 
   
-//SELECT ****************************************************
+//SELECT ************************************************************
   
   
         $("#mySelect").change(function(){
@@ -49,7 +60,7 @@ $("document").ready(function(){
         });
   
   
-//EMAIL ****************************************************
+//EMAIL *************************************************************
   
   
       $("#mailId").blur(function(){
@@ -58,7 +69,7 @@ $("document").ready(function(){
        });
   
   
-//DATE ****************************************************
+//DATE *************************************************************
   
   
       $("#dateId").blur(function(){
@@ -67,14 +78,14 @@ $("document").ready(function(){
       });
   
   
-//NUMBER ****************************************************  
+//NUMBER ***********************************************************
   
       $("#typeNum").focusout(function(){
         var num =parseInt( $("#typeNum").val());
         $("#numValue").html(num);
         });
   
-  //password******************************************
+  //password********************************************************
   
   
       $("#passwordID").focusout(function(){
@@ -82,7 +93,7 @@ $("document").ready(function(){
         $("#passwordValue").html(pass);
       });
 
-//range*********************************************
+//range*************************************************************
   
 
         $("#rangeId").change(function(){
@@ -91,9 +102,9 @@ $("document").ready(function(){
         });
 
       
-//COLOR ****************************************************
+//COLOR ************************************************************
   
-        $("#colorId").click(function(){
+        $("#colorId").change(function(){          
           var color = $("#colorId").val();
           $("#colorValue").html(color);
         });
